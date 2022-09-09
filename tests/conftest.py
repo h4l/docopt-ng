@@ -1,9 +1,10 @@
 import json
-from pathlib import Path
 import re
+from pathlib import Path
+
+import pytest
 
 import docopt
-import pytest
 
 
 def pytest_collect_file(file_path: Path, path, parent):

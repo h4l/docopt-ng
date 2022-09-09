@@ -1,31 +1,32 @@
-from __future__ import annotations, with_statement
-from typing import Sequence
+from __future__ import annotations
+from __future__ import with_statement
+
 import re
 from textwrap import dedent
+from typing import Sequence
 
-from docopt import (
-    docopt,
-    DocoptExit,
-    DocoptLanguageError,
-    Option,
-    Argument,
-    Command,
-    OptionsShortcut,
-    Required,
-    NotRequired,
-    Either,
-    OneOrMore,
-    lint_docstring,
-    parse_argv,
-    parse_docstring_sections,
-    parse_options,
-    parse_pattern,
-    formal_usage,
-    Tokens,
-    transform,
-)
 import pytest
 from pytest import raises
+
+from docopt import Argument
+from docopt import Command
+from docopt import DocoptExit
+from docopt import DocoptLanguageError
+from docopt import Either
+from docopt import NotRequired
+from docopt import OneOrMore
+from docopt import Option
+from docopt import OptionsShortcut
+from docopt import Required
+from docopt import Tokens
+from docopt import docopt
+from docopt import formal_usage
+from docopt import lint_docstring
+from docopt import parse_argv
+from docopt import parse_docstring_sections
+from docopt import parse_options
+from docopt import parse_pattern
+from docopt import transform
 
 
 def test_pattern_flat():
